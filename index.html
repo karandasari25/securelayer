@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Layer - Securing Your Digital World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .team-card:hover {
+            transform: scale(1.03);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="Com logo.jpeg.jpg" alt="Secure Layer Logo" class="h-8 w-auto mr-2 logo-image" loading="eager">
+                        <span class="text-xl font-bold text-gray-900">Secure Layer</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#services" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#team" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Our Team</a>
+                    <a href="#about" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">About Us</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-white shadow-lg" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#services" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#team" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Our Team</a>
+                <a href="#about" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                <a href="#contact" class="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Securing Your Digital World</h1>
+                    <p class="text-xl mb-8">Welcome to Secure Layer, where we deliver cutting-edge cybersecurity solutions that protect your digital assets and ensure business continuity.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition duration-300">Get Started</a>
+                        <a href="#services" class="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-blue-600 transition duration-300">Our Services</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cybersecurity" class="rounded-lg shadow-2xl floating max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services Include</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Reliable, efficient, and tailored services to meet the unique security needs of modern businesses.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-code text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Web Development</h3>
+                    <p class="text-gray-600">Secure and scalable websites tailored for your business with built-in security architecture.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-user-shield text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Cybersecurity Consulting</h3>
+                    <p class="text-gray-600">Strategic advice to strengthen your security posture and protect against emerging threats.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-bug text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Web Penetration Testing</h3>
+                    <p class="text-gray-600">Identify and fix vulnerabilities in your web applications before attackers can exploit them.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-network-wired text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Network Auditing</h3>
+                    <p class="text-gray-600">Comprehensive audits to detect and close network loopholes that could compromise your data.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Digital Risk Protection</h3>
+                    <p class="text-gray-600">Shield your brand from digital threats and impersonations across the online landscape.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-check-double text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Security Compliance</h3>
+                    <p class="text-gray-600">Helping you meet regulatory requirements with confidence and maintain industry standards.</p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-database text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Data Loss Recovery</h3>
+                    <p class="text-gray-600">Recover lost or corrupted data securely with our advanced forensic techniques.</p>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="bg-gray-50 rounded-lg p-6 shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-lock text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Cyber Forensics</h3>
+                    <p class="text-gray-600">Investigate security breaches and gather digital evidence with our forensic expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose Us?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We combine expertise with ethics to deliver security solutions you can trust.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-certificate text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">CEH v12 Certified Experts</h3>
+                    <p class="text-gray-600">Our team holds the highest certifications in ethical hacking and cybersecurity.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-heart text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">100% Client Satisfaction</h3>
+                    <p class="text-gray-600">We measure our success by your satisfaction and the security of your assets.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-eye text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Transparent & Ethical Approach</h3>
+                    <p class="text-gray-600">We believe in complete transparency in all our security assessments and recommendations.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-tags text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Affordable & Scalable Solutions</h3>
+                    <p class="text-gray-600">Security solutions tailored to your budget and growth trajectory.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Let's Secure Your Business Today</h3>
+                <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">Reach out to us for a free consultation and take the first step towards comprehensive digital protection.</p>
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition duration-300 inline-block">Get Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Meet the cybersecurity experts dedicated to protecting your digital assets.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md team-card transition duration-300 cursor-pointer" onclick="openModal('anuj-modal')">
+                    <div class="h-64">
+                        <img src="images/team/anuj.jpg" alt="Anuj Chaudhari" class="w-full h-64 object-cover rounded-lg">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Anuj Chaudhari</h3>
+                        <p class="text-blue-600 font-medium mb-3">CEO & Founder</p>
+                        <p class="text-gray-600 mb-4">Cybersecurity Visionary | CEH v12</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md team-card transition duration-300 cursor-pointer" onclick="openModal('nandini-modal')">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-circle text-9xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Sri Nandini</h3>
+                        <p class="text-blue-600 font-medium mb-3">Operations Manager</p>
+                        <p class="text-gray-600 mb-4">Business Operations & Strategy</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md team-card transition duration-300 cursor-pointer" onclick="openModal('ganesh-modal')">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-circle text-9xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">suraj</h3>
+                        <p class="text-blue-600 font-medium mb-3">HR Manager</p>
+                        <p class="text-gray-600 mb-4">Human Resources & Talent Development</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md team-card transition duration-300 cursor-pointer" onclick="openModal('ankit-modal')">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-circle text-9xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Ankit Chaudhari</h3>
+                        <p class="text-blue-600 font-medium mb-3">Technical Director</p>
+                        <p class="text-gray-600 mb-4">Cybersecurity Expert | CEH v12</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md team-card transition duration-300 cursor-pointer" onclick="openModal('karan-modal')">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-circle text-9xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Dasari</h3>
+                        <p class="text-blue-600 font-medium mb-3">Lead Developer</p>
+                        <p class="text-gray-600 mb-4">Full Stack Development & Security</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md team-card transition duration-300 cursor-pointer" onclick="openModal('rohit-modal')">
+                    <div class="h-64 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-user-circle text-9xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Rohit Yadav</h3>
+                        <p class="text-blue-600 font-medium mb-3">Cyber Security Analyst</p>
+                        <p class="text-gray-600 mb-4">Cyber Security Analyst</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+               
+
+              
+
+                <!-- Anuj Chaudhari Modal -->
+                <div id="anuj-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                    <div class="fixed inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-2xl font-bold text-gray-900">Anuj Chaudhari</h2>
+                                <button onclick="closeModal('anuj-modal')" class="text-gray-400 hover:text-gray-500">
+                                    <i class="fas fa-times text-2xl"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Position</h3>
+                                    <p class="text-gray-600 mb-4">CEO & Founder</p>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Education & Certifications</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>B.Tech in Computer Science - Delhi University</li>
+                                        <li>Certified Ethical Hacker (CEH v12)</li>
+                                    </ul>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Technical Skills</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>Cybersecurity Strategy & Leadership</li>
+                                        <li>Enterprise Security Architecture</li>
+                                        <li>Security Operations Management</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Professional Background</h3>
+                                    <p class="text-gray-600 mb-4">Anuj Chaudhari is the visionary CEO and Founder of Secure Layer, driving the company's growth and innovation in cybersecurity services. With over a decade of experience in the industry, he combines technical expertise with strategic leadership to create comprehensive security solutions for clients.</p>
+                                    <p class="text-gray-600 mb-4">As a CEH-certified expert, Anuj brings deep technical knowledge to the executive table, ensuring that Secure Layer stays at the forefront of cybersecurity trends and threats.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nandini Modal -->
+                <div id="nandini-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                    <div class="fixed inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-2xl font-bold text-gray-900">Nandini</h2>
+                                <button onclick="closeModal('nandini-modal')" class="text-gray-400 hover:text-gray-500">
+                                    <i class="fas fa-times text-2xl"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Position</h3>
+                                    <p class="text-gray-600 mb-4">Operations Manager</p>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Education & Certifications</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>MBA in Business Administration</li>
+                                        <li>CPM - Certified Professional Manager</li>
+                                    </ul>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Technical Skills</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>Business Process Optimization</li>
+                                        <li>Project Management</li>
+                                        <li>Team Leadership</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Professional Background</h3>
+                                    <p class="text-gray-600 mb-4">Nandini is a seasoned operations manager with extensive experience in managing business operations and team coordination. She plays a crucial role in ensuring smooth day-to-day operations and strategic planning at Secure Layer.</p>
+                                    <p class="text-gray-600 mb-4">With her MBA and CPM certifications, Nandini brings a strong business acumen to the team, helping to align operational excellence with the company's cybersecurity goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ganesh Modal -->
+                <div id="ganesh-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                    <div class="fixed inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-2xl font-bold text-gray-900">Ganesh</h2>
+                                <button onclick="closeModal('ganesh-modal')" class="text-gray-400 hover:text-gray-500">
+                                    <i class="fas fa-times text-2xl"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Position</h3>
+                                    <p class="text-gray-600 mb-4">HR Manager</p>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Education & Certifications</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>MBA in Human Resource Management</li>
+                                        <li>SHRM-CP - Society for Human Resource Management Certified Professional</li>
+                                    </ul>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Technical Skills</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>Talent Acquisition & Development</li>
+                                        <li>Employee Relations</li>
+                                        <li>Performance Management</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Professional Background</h3>
+                                    <p class="text-gray-600 mb-4">Ganesh is a dedicated HR professional with expertise in talent management and organizational development. He plays a crucial role in building and maintaining Secure Layer's talented workforce.</p>
+                                    <p class="text-gray-600 mb-4">With his SHRM-CP certification and extensive HR experience, Ganesh ensures that Secure Layer maintains a strong, motivated team capable of delivering top-tier cybersecurity services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karan Modal -->
+                <div id="karan-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                    <div class="fixed inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-2xl font-bold text-gray-900">Karan</h2>
+                                <button onclick="closeModal('karan-modal')" class="text-gray-400 hover:text-gray-500">
+                                    <i class="fas fa-times text-2xl"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Position</h3>
+                                    <p class="text-gray-600 mb-4">Lead Developer</p>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Education & Certifications</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>B.Tech in Computer Science - Delhi University</li>
+                                        <li>Certified Secure Software Developer</li>
+                                    </ul>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Technical Skills</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>Full Stack Development</li>
+                                        <li>Secure Code Practices</li>
+                                        <li>Web Application Security</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Professional Background</h3>
+                                    <p class="text-gray-600 mb-4">Karan is a skilled lead developer with expertise in building secure web applications and implementing security best practices in software development. He plays a crucial role in ensuring that Secure Layer's digital products are both functional and secure.</p>
+                                    <p class="text-gray-600 mb-4">With his background in both development and security, Karan helps bridge the gap between technical implementation and security requirements, creating robust and secure solutions for clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ankit Chaudhari Modal -->
+                <div id="ankit-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                    <div class="fixed inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-2xl font-bold text-gray-900">Ankit Chaudhari</h2>
+                                <button onclick="closeModal('ankit-modal')" class="text-gray-400 hover:text-gray-500">
+                                    <i class="fas fa-times text-2xl"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Position</h3>
+                                    <p class="text-gray-600 mb-4">Technical Director</p>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Education & Certifications</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>B.Tech in Computer Science Engineering - Delhi University</li>
+                                        <li>Certified Ethical Hacker (CEH v12)</li>
+                                    </ul>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Technical Skills</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>Vulnerability Assessment & Penetration Testing (VAPT)</li>
+                                        <li>Network Security Audits</li>
+                                        <li>Cyber Forensics & Data Loss Recovery</li>
+                                        <li>Web Development with Built-in Security</li>
+                                        <li>Digital Risk Protection & Cybersecurity Consulting</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Professional Background</h3>
+                                    <p class="text-gray-600 mb-4">Ankit Chaudhari is a seasoned cybersecurity professional and the Technical Director at Secure Layer. With a passion for safeguarding digital infrastructure, he leads the technical team that delivers comprehensive cybersecurity solutions to clients across industries.</p>
+                                    <p class="text-gray-600 mb-4">As a CEH-certified expert, Ankit brings deep technical knowledge to the table, ensuring that Secure Layer's solutions are both innovative and effective against modern cyber threats.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+             
+                <!-- Rohit Yadav Modal -->
+                <div id="rohit-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+                    <div class="fixed inset-0 flex items-center justify-center">
+                        <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4">
+                            <div class="flex justify-between items-center mb-6">
+                                <h2 class="text-2xl font-bold text-gray-900">Rohit Yadav</h2>
+                                <button onclick="closeModal('rohit-modal')" class="text-gray-400 hover:text-gray-500">
+                                    <i class="fas fa-times text-2xl"></i>
+                                </button>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Education & Certifications</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>Bachelor of Science (In Progress)</li>
+                                        <li>Certified Ethical Hacking (CEH)</li>
+                                        <li>Vulnerability Assessment and Penetration Testing (VAPT)</li>
+                                    </ul>
+
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Technical Skills</h3>
+                                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                                        <li>Cybersecurity Tools: Kali Linux, Burp Suite, Nmap, Wireshark</li>
+                                        <li>Programming: Python, HTML, CSS, Basic JavaScript</li>
+                                        <li>Data Science & AI: Python-based data analysis, Machine Learning</li>
+                                    </ul>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="text-xl font-semibold mb-2 text-blue-600">Professional Background</h3>
+                                    <p class="text-gray-600 mb-4">Hi, I'm Rohit Yadav — a tech enthusiast with a growing passion for cybersecurity, ethical hacking, data science, and AI.</p>
+                                    <p class="text-gray-600 mb-4">Currently, I'm pursuing a Bachelor of Science degree while actively building hands-on experience in both cybersecurity and modern technologies. I hold certifications in Certified Ethical Hacking (CEH) and Vulnerability Assessment and Penetration Testing (VAPT), which have helped me gain practical knowledge of tools like Kali Linux, Burp Suite, Nmap, and Wireshark.</p>
+                                    <p class="text-gray-600 mb-4">I've also started expanding into the world of Data Science and Artificial Intelligence through a training program at Dristi CPS, IIT Indore, where I'm learning about Python-based data analysis, machine learning, and data visualization.</p>
+                                    <p class="text-gray-600 mb-4">In addition to my cybersecurity background, I've developed skills in Python programming, HTML, CSS, and have a basic understanding of JavaScript. Whether it's building simple web pages or writing automation scripts, I enjoy solving problems and constantly learning new things.</p>
+                                    <p class="text-gray-600 mb-4">My goal is to blend my knowledge of cybersecurity and AI to help build secure, smart solutions that make a real impact. I'm always open to collaborations, internships, or projects where I can learn, contribute, and grow.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+            <!-- Internship Section -->
+            <div class="mt-20 bg-blue-50 rounded-lg p-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Internship Program</h3>
+                        <p class="text-gray-600 mb-6">We're passionate about training the next generation of cybersecurity professionals. Our internship program offers real-world, hands-on experience in various security domains.</p>
+                        <div class="mt-6">
+                            <p class="text-gray-600">Ready to start your cybersecurity journey? Apply now through our internship application form:</p>
+                            <a href="https://docs.google.com/forms/d/1vmmV9rywsLgZKu9JXhHZXrHJ899JJn1jNZsBHbHbke8/viewform?edit_requested=true" class="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Apply Now
+                            </a>
+                        </div>
+                        <p class="text-gray-600">Every intern receives verifiable certifications through our online verification portal upon successful completion.</p>
+                        <div class="mt-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Verify Certificate</h4>
+                        
+                            <div class="space-y-4">
+                                <div>
+                                    <label for="certificate-id" class="block text-sm font-medium text-gray-700 mb-2">Certificate ID</label>
+                                    <input type="text" id="certificate-id" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Enter your Certificate ID" required>
+                                    <p class="mt-2 text-sm text-gray-600">Enter your Certificate ID to verify your certificate. You can find your Certificate ID on your certificate document.</p>
+                                </div>
+                                <button type="button" onclick="verifyCertificate()" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+                                    Verify
+                                </button>
+                            </div>
+                            <div id="verification-result" class="mt-4 hidden">
+                                <div class="bg-green-50 p-4 rounded-md text-green-800" id="success-message"></div>
+                                <div class="bg-red-50 p-4 rounded-md text-red-800" id="error-message"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Team working" class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="About Secure Layer" class="rounded-lg shadow-xl max-w-full h-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Us</h2>
+                    <p class="text-gray-600 mb-6">Secure Layer, founded in May 2025 by cybersecurity enthusiast and CEH-certified expert Anuj Chaudhari, is dedicated to securing the digital future of businesses and individuals.</p>
+                    <p class="text-gray-600 mb-6">As a trusted provider of cutting-edge cybersecurity solutions, we specialize in identifying, assessing, and mitigating cyber risks with precision and professionalism.</p>
+                    <p class="text-gray-600 mb-8">Our expertise covers a wide spectrum—from Web Penetration Testing (VAPT), Network Auditing, and Cyber Forensics to Digital Risk Protection, Web Development with Secure Architecture, and Data Loss Recovery. At Secure Layer, we believe security should never be an afterthought—it should be built into every layer of your technology.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Why Choose Secure Layer?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Founded and led by a Certified Ethical Hacker (CEH v12)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Transparent, ethical, and client-centric solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Future-ready security services tailored to your needs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span class="text-gray-700">Dedicated to innovation, education, and digital trust</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <p class="text-gray-900 font-medium mt-6">At Secure Layer, your security is our mission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Have questions or ready to secure your business? Reach out to us today.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form id="contact-form" class="space-y-6" onsubmit="handleSubmit(event)">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                            <input type="text" id="subject" name="subject" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="flex justify-end">
+                            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const form = document.getElementById('contact-form');
+                            
+                            form.addEventListener('submit', async function(event) {
+                                event.preventDefault();
+                                
+                                const formData = new FormData(form);
+                                const data = Object.fromEntries(formData);
+                                
+                                try {
+                                    const response = await fetch('/submit', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                        },
+                                        body: JSON.stringify(data)
+                                    });
+                                    
+                                    const result = await response.json();
+                                    
+                                    if (result.success) {
+                                        alert('Message sent successfully!');
+                                        form.reset();
+                                    } else {
+                                        alert('Error sending message. Please try again.');
+                                    }
+                                } catch (error) {
+                                    console.error('Error:', error);
+                                    alert('Error sending message. Please try again.');
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Email</h4>
+                                    <p class="text-base text-gray-900">securelayerhelp@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Phone</h4>
+                                    <p class="text-base text-gray-900">+91 8929031413</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-blue-100 rounded-full p-3">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-medium text-gray-500">Location</h4>
+                                    <p class="text-base text-gray-900">India</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="text-sm font-medium text-gray-500 mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300 text-gray-700">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300 text-gray-700">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300 text-gray-700">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300 text-gray-700">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-4">*Social media links coming soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-400 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">Secure Layer</span>
+                    </div>
+                    <p class="text-gray-400">Securing your digital world with cutting-edge cybersecurity solutions and ethical expertise.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white transition duration-300">Our Team</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Penetration Testing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Network Auditing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Data Recovery</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Security Compliance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">securelayerhelp@gmail.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-blue-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">+91 8929031413</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-2"></i>
+                            <span class="text-gray-400">India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Secure Layer. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Certificate verification
+        async function verifyCertificate() {
+            const certificateId = document.getElementById('certificate-id').value.trim();
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+            const resultDiv = document.getElementById('verification-result');
+            const verifyButton = document.querySelector('button[onclick="verifyCertificate()"]');
+
+            // Clear previous messages
+            successMessage.textContent = '';
+            successMessage.className = 'bg-green-50 p-4 rounded-md text-green-800 hidden';
+            errorMessage.textContent = '';
+            errorMessage.className = 'bg-red-50 p-4 rounded-md text-red-800 hidden';
+            resultDiv.classList.add('hidden');
+
+            if (!certificateId) {
+                errorMessage.textContent = 'Please enter a Certificate ID';
+                errorMessage.classList.remove('hidden');
+                resultDiv.classList.remove('hidden');
+                return;
+            }
+
+            try {
+                // Show loading state
+                verifyButton.disabled = true;
+                verifyButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Verifying...';
+
+                const response = await fetch('/verify-certificate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ certificate_id: certificateId })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Format the success message with certificate details
+                    successMessage.innerHTML = `
+                        <div class="font-bold text-lg text-green-700 mb-2">✓ Certificate Verified Successfully</div>
+                        <div class="space-y-1">
+                            <div><span class="font-medium">Name:</span> ${data.data.name}</div>
+                            <div><span class="font-medium">Certificate ID:</span> ${data.data.certificate_id}</div>
+                            <div><span class="font-medium">Issue Date:</span> ${data.data.issue_date}</div>
+                        </div>
+                    `;
+                    successMessage.classList.remove('hidden');
+                    resultDiv.classList.remove('hidden');
+                } else {
+                    errorMessage.textContent = data.error || 'Certificate not found. Please check the ID and try again.';
+                    errorMessage.classList.remove('hidden');
+                    resultDiv.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error('Verification error:', error);
+                errorMessage.textContent = 'An error occurred while verifying the certificate. Please try again later.';
+                errorMessage.classList.remove('hidden');
+                resultDiv.classList.remove('hidden');
+            } finally {
+                // Reset button state
+                verifyButton.disabled = false;
+                verifyButton.innerHTML = 'Verify';
+            }
+        }
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.service-card, .team-card').forEach(card => {
+            observer.observe(card);
+        });
+        // Add animation class
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fadeIn {
+                animation: fadeIn 0.6s ease-out forwards;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('bg-black')) {
+                e.target.parentElement.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
